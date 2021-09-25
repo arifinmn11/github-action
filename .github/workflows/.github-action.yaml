@@ -11,7 +11,7 @@ jobs:
           go-version: "1.17.0" # The Go version to download (if necessary) and use.
       - name: Check Go version
         run: |
-          go version
+          make run
       - name: Go Build
         run: |
           make build
@@ -45,4 +45,4 @@ jobs:
           make build
       - name: Run the app
         run: |
-          ./github-action
+          make run
